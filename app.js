@@ -28,3 +28,16 @@ function agregarAmigo() {
   // Refresco la lista que se muestra en pantalla
   mostrarAmigos();
 }
+
+// --- Función que muestra la lista de amigos en el HTML ---
+// Limpio la lista y recorro el array con un for para crear los <li>
+function mostrarAmigos() {
+  // Evito duplicados en la vista borrando lo que haya antes
+  listaEl.innerHTML = '';
+
+  for (let i = 0; i < amigos.length; i++) {
+    const li = document.createElement('li');
+    li.textContent = amigos[i];
+    listaEl.appendChild(li);
+  }
+}

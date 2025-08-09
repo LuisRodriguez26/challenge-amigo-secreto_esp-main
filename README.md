@@ -8,11 +8,6 @@ Características principales
 - Seleccionar un ganador aleatorio
 - Interfaz intuitiva y fácil de usar
 
-Tecnologías utilizadas
-- HTML5
-- CSS3
-- JavaScript (ES6)
-
 Cómo usar
 1. Ingresa nombres en el campo de texto
 2. Haz clic en "Añadir" o presiona Enter
@@ -25,9 +20,6 @@ Funcionalidades implementadas
 - Visualización de la lista de participantes
 - Algoritmo de selección aleatoria usando Math.random() y Math.floor()
 - Manejo de eventos con teclado (Enter para agregar)
-
-Enlace de GitHub Pages
-La aplicación está publicada en GitHub Pages.
 
 Estructura del proyecto
 - index.html - Archivo principal HTML

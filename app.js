@@ -2,3 +2,8 @@
 
 // Aquí guardo los nombres que va ingresando el usuario
 let amigos = [];
+
+// Referencias a elementos del HTML
+const input = document.getElementById('amigo');
+const listaEl = document.getElementById('listaAmigos');
+const resultadoEl = document.getElementById('resultado');

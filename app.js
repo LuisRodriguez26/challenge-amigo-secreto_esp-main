@@ -41,3 +41,26 @@ function mostrarAmigos() {
     listaEl.appendChild(li);
   }
 }
+
+// --- Función para sortear aleatoriamente un amigo ---
+// Valido que haya elementos, genero un índice y muestro el resultado
+function sortearAmigo() {
+  if (amigos.length === 0) {
+    alert('La lista está vacía. Agrega al menos un nombre.');
+    return;
+  }
+
+  // Índice aleatorio entre 0 y amigos.length - 1
+  const indice = Math.floor(Math.random() * amigos.length);
+  const elegido = amigos[indice];
+
+  // Muestro el resultado dentro del <ul> de resultado
+  resultadoEl.innerHTML = `<li>¡El amigo secreto es: <strong>${elegido}</strong>!</li>`;
+}
+
+// --- Agregar con Enter para mayor comodidad ---
+input.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    agregarAmigo();
+  }
+});
